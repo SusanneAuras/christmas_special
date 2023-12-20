@@ -1,8 +1,11 @@
-import 'package:christmas_special/main.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MenueScreen());
+}
+
+class AssetImage {
+  AssetImage(String s);
 }
 
 class MenueScreen extends StatelessWidget {
@@ -35,13 +38,13 @@ class MenueScreen extends StatelessWidget {
                     child: Container(
                       width: 430,
                       height: 932,
-                      decoration: const BoxDecoration(
+                      decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: NetworkImage(
+                          image: AssetImage(
                               "assets/illustrations/image_home_screen.png"), // Bild vom Homescreen
                           fit: BoxFit.fill,
                         ),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: Color(0x3F000000),
                             blurRadius: 4,
@@ -364,7 +367,7 @@ class MenueScreen extends StatelessWidget {
                                                       const ShapeDecoration(
                                                     image: DecorationImage(
                                                       image: AssetImage(
-                                                          "stars.png"), // Bild mit den Sternen
+                                                          "assets/illustrations/stars.png"), // Bild mit den Sternen
                                                       fit: BoxFit.contain,
                                                     ),
                                                     shape:
@@ -423,7 +426,7 @@ class MenueScreen extends StatelessWidget {
                                                       const ShapeDecoration(
                                                     image: DecorationImage(
                                                       image: AssetImage(
-                                                          "gift.png"), // Bild vom Geschenk
+                                                          "assets/illustrations/gift.png"), // Bild vom Geschenk
                                                       fit: BoxFit.contain,
                                                     ),
                                                     shape:
@@ -481,7 +484,7 @@ class MenueScreen extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       image: const DecorationImage(
                                         image: AssetImage(
-                                            "kai.png"), // Foto von Kai
+                                            "assets/illustrations/kai.png"), // Foto von Kai
                                         fit: BoxFit.fill,
                                       ),
                                       shape: RoundedRectangleBorder(
