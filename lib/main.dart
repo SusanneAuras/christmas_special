@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/* import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MainApp());
@@ -6,8 +6,8 @@ void main() {
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
-
-  @override
+}
+  /* @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
@@ -17,4 +17,4 @@ class MainApp extends StatelessWidget {
       ),
     );
   }
-}
+} */ */
