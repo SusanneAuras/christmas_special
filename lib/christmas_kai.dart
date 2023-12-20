@@ -1,4 +1,9 @@
+import 'package:christmas_special/main.dart';
 import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MainApp());
+}
 
 class MenueScreen extends StatelessWidget {
   const MenueScreen({super.key});
